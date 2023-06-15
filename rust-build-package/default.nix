@@ -1,3 +1,5 @@
+# doc: https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/rust.section.md
+
 with import <nixpkgs> {};
     rustPlatform.buildRustPackage {
         pname = "rust-test";
@@ -7,6 +9,7 @@ with import <nixpkgs> {};
 
         cargoLock = {
             lockFile = ./Cargo.lock;
+            allowBuiltinFetchGit = true;
         };
 
         nativeBuildInputs = [
