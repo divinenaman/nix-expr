@@ -1,19 +1,19 @@
 {
     inputs={
         nixpkgs.url = "github:nixos/nixpkgs";
-        flake-utils.url = "github:numtide/flake-utils";
+        flake-parts.url = "github:hercules-ci/flake-parts";
     };
 
-    outputs={ self, nixpkgs, flake-utils }:
-        flake-utils.lib.eachDefaultSystem (system:
-		let pkgs = nixpkgs.legacyPackages.${system};
-            buildInputs = 
-                [ pkgs.cargo 
-                  pkgs.rustPlatform.cargoSetupHook
-                  pkgs.rustc
-                ];
-        	in {
-            		packages.default = 
+    outputs=inputs@{ flake-parts, ... }:
+        flake-parts.lib.mkFlake { inherit inputs; } {
+            flake = let 
+                pkgs = nixpkgs.legacyPackages.${system};
+                buildInputs = 
+                    [ pkgs.cargo 
+                    pkgs.rustPlatform.cargoSetupHook
+                    pkgs.rustc
+                    ];
+        	    in { packages.default = 
                         pkgs.rustPlatform.buildRustPackage {
                             pname = "rust-test";
                             version = "0.0.1";
@@ -28,7 +28,8 @@
                             nativeBuildInputs = buildInputs;
                         };
 
-            		devShell = pkgs.mkShell { inherit buildInputs; };
-        	  }
-		);
+            		 devShell = pkgs.mkShell { inherit buildInputs; };
+        	        };
+            systems = [ "x86_64-linux" ]
+        };
 }
