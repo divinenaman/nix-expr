@@ -6,14 +6,15 @@
 
     outputs=inputs@{ flake-parts, ... }:
         flake-parts.lib.mkFlake { inherit inputs; } {
-            flake = let 
-                pkgs = nixpkgs.legacyPackages.${system};
+            systems = [ "x86_64-linux" "aarch64-darwin" ];
+            perSystem = { config, self', inputs', pkgs, system, ... }: let
                 buildInputs = 
                     [ pkgs.cargo 
-                    pkgs.rustPlatform.cargoSetupHook
-                    pkgs.rustc
+                      pkgs.rustPlatform.cargoSetupHook
+                      pkgs.rustc
                     ];
-        	    in { packages.default = 
+                in 
+                {   packages.default = 
                         pkgs.rustPlatform.buildRustPackage {
                             pname = "rust-test";
                             version = "0.0.1";
@@ -28,8 +29,7 @@
                             nativeBuildInputs = buildInputs;
                         };
 
-            		 devShell = pkgs.mkShell { inherit buildInputs; };
-        	        };
-            systems = [ "x86_64-linux" ]
+            	    devShells.default = pkgs.mkShell { inherit buildInputs; };
+        	    };
         };
 }
