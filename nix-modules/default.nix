@@ -5,5 +5,5 @@ in {
 	configs = {
 		pkgName = "naman";
 	};
-	#inherit home;
+	inherit home;
 }
