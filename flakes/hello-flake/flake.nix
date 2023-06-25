@@ -10,7 +10,7 @@
         	in {
             		packages.hello = pkgs.hello;
 
-            		devShell = 
+            		devShell.hello = 
                 	pkgs.mkShell { buildInputs = [ pkgs.hello pkgs.cowsay ]; };
         	  }
 		);
