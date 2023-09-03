@@ -4,16 +4,18 @@
 	  flake-utils.url = "github:numtide/flake-utils";
 	  flake-parts.url = "github:hercules-ci/flake-parts";
 	  
-	  myhello.url = "path:./flakes/hello-flake";
+	  myhello.url = "./flakes/hello-flake";
+		playwright-nix.url = "./flakes/playwright-nix";
 	};
 
-	outputs = inputs@{ flake-parts, myhello, ... }: 
+	outputs = inputs@{ flake-parts, myhello, playwright-nix, ... }: 
 		flake-parts.lib.mkFlake { inherit inputs; } {
 			systems = [ "x86_64-linux" "aarch64-darwin" ];
-			imports = [ ./rust-build-package/module.nix ./flake-parts-modules/hello-module.nix ];
+			imports = [ ./rust-build-package/module.nix ./flake-parts-modules/hello-module.nix ./flakes/playwright-nix/module.nix ];
 			perSystem = { pkgs, system, ... }: {
 				packages.default = pkgs.hello;
-				packages.myhello = myhello.packages.${system}.hello;
+				packages.subflake-myhello = myhello.packages.${system}.hello;
+				packages.subflake-playwright-test = playwright-nix.packages.${system}.playwright-test;
 			};
 		};
 }
