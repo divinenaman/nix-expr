@@ -10,16 +10,22 @@
       text = ''
           set -e
 
+          # arg 1 : directory
           # if $1 not set or null use `.`
           dir=''${1:-.}
-          t=$(date +%s)
-          sub=''${2:-"proxver-$t"}
+          
+          # arg 2 : port
+          port=''${2:-4000}
+
+          # arg 3 : subdomain
+          timestamp=$(date +%s)
+          sub=''${3:-"proxver-$timestamp"}
 
           echo "starting server"
-          python -m http.server 5000 --directory "$dir" &
+          python -m http.server "$port" --directory "$dir" &
           
           echo "proxing..."
-          lt --port 5000 --subdomain "$sub" 
+          lt --port "$port" --subdomain "$sub" 
         '';
       };
       devShells.proxver = with pkgs; mkShell {
