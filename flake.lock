@@ -102,6 +102,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/hello-flake",
         "type": "path"
       },
@@ -135,6 +136,13 @@
       "original": {
         "path": "/nix/store/yaw9w6mv3v7q3fbc5dhp35c82h1vyc8c-source/flakes/hello-flake",
 >>>>>>> 4e9b948 (add port & subdomain as args)
+=======
+        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/hello-flake",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/hello-flake",
+>>>>>>> 41f5cd6 (kill background jobs on kill signals)
         "type": "path"
       }
     },
@@ -236,6 +244,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/playwright-nix",
         "type": "path"
       },
@@ -285,6 +294,13 @@
       "original": {
         "path": "/nix/store/yaw9w6mv3v7q3fbc5dhp35c82h1vyc8c-source/flakes/playwright-nix",
 >>>>>>> 4e9b948 (add port & subdomain as args)
+=======
+        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/playwright-nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/playwright-nix",
+>>>>>>> 41f5cd6 (kill background jobs on kill signals)
         "type": "path"
       }
     },
