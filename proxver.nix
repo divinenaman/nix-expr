@@ -1,13 +1,25 @@
 { self, ... }:
 {
-  perSystem = { self', pkgs, ... } :
+  perSystem = { self', pkgs, ... } : let
+      localtunnel = pkgs.nodePackages_latest.localtunnel;
+    in
     {
       packages.proxver = pkgs.writeShellApplication {
       name = "proxver";
-      runtimeInputs = with pkgs; [ python311 ngrok ];
+      runtimeInputs = [ pkgs.python311 localtunnel ];
       text = ''
-          python -m http.server 4000 &
-          ngrok http --host-header=rewrite 4000
+          set -e
+
+          # if $1 not set or null use `.`
+          dir=''${1:-.}
+          t=$(date +%s)
+          sub=''${2:-"proxver-$t"}
+
+          echo "starting server"
+          python -m http.server 5000 --directory "$dir" &
+          
+          echo "proxing..."
+          lt --port 5000 --subdomain "$sub" 
         '';
       };
       devShells.proxver = with pkgs; mkShell {
