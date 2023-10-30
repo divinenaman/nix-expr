@@ -10,6 +10,11 @@
       text = ''
           set -e
 
+          # kill child jobs
+          # negative PID kills all process in same process group
+          # https://stackoverflow.com/questions/360201/how-do-i-kill-background-processes-jobs-when-my-shell-script-exits
+          trap 'trap - SIGTERM && kill -- -$$' SIGINT SIGTERM EXIT
+          
           # arg 1 : directory
           # if $1 not set or null use `.`
           dir=''${1:-.}
