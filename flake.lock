@@ -100,6 +100,7 @@
         "narHash": "sha256-AOr/y/8QkwA2Lm8mPhxXRuPZhGEfja4h4o4XzK371fE=",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/hello-flake",
         "type": "path"
       },
@@ -119,6 +120,13 @@
       "original": {
         "path": "/nix/store/wnszh4gwmxcwi39fffj769jqwc9a77f1-source/flakes/hello-flake",
 >>>>>>> 5cf3b02 (add devshell)
+=======
+        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/hello-flake",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/hello-flake",
+>>>>>>> 00195f5 (use localtunnel)
         "type": "path"
       }
     },
@@ -218,6 +226,7 @@
         "narHash": "sha256-n+hH7abtJLAMmd0TeDlVW1wvQ0HOPNKXlRaSFt0215s=",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/playwright-nix",
         "type": "path"
       },
@@ -253,6 +262,13 @@
       "original": {
         "path": "/nix/store/wnszh4gwmxcwi39fffj769jqwc9a77f1-source/flakes/playwright-nix",
 >>>>>>> 5cf3b02 (add devshell)
+=======
+        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/playwright-nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/playwright-nix",
+>>>>>>> 00195f5 (use localtunnel)
         "type": "path"
       }
     },
