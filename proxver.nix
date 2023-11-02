@@ -6,10 +6,10 @@
     {
       packages.proxver = pkgs.writeShellApplication {
       name = "proxver";
-      runtimeInputs = [ pkgs.python311 localtunnel ];
+      runtimeInputs = [ pkgs.python311 localtunnel pkgs.gnugrep pkgs.gawk ];
       text = ''
-          set -e
-
+          set -e 
+          
           # kill child jobs
           # negative PID kills all process in same process group
           # https://stackoverflow.com/questions/360201/how-do-i-kill-background-processes-jobs-when-my-shell-script-exits
@@ -28,7 +28,19 @@
 
           echo "starting server"
           python -m http.server "$port" --directory "$dir" &
-          
+
+          # pid="$!"
+          # echo "server PID: $pid"
+
+          # if [ "$port" == "0" ]
+          # then
+          #  info=$(ss -tulnp | grep "pid=")
+          #  echo "aaasss"
+          #  echo "info : $info"
+          #    
+          #  port=$(ss -l -p -n | grep "pid=$pid," | tail -n 1 | awk '{print $5}' | awk -F: '{print $2}')
+          # fi
+
           echo "proxing..."
           lt --port "$port" --subdomain "$sub" 
         '';
