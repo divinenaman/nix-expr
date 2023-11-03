@@ -80,11 +80,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-AOr/y/8QkwA2Lm8mPhxXRuPZhGEfja4h4o4XzK371fE=",
-        "path": "/nix/store/5mf58f1k7qd11fd08qqy9fd25zm81lpd-source/flakes/hello-flake",
+        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/hello-flake",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/5mf58f1k7qd11fd08qqy9fd25zm81lpd-source/flakes/hello-flake",
+        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/hello-flake",
         "type": "path"
       }
     },
@@ -179,11 +179,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-n+hH7abtJLAMmd0TeDlVW1wvQ0HOPNKXlRaSFt0215s=",
-        "path": "/nix/store/5mf58f1k7qd11fd08qqy9fd25zm81lpd-source/flakes/playwright-nix",
+        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/playwright-nix",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/5mf58f1k7qd11fd08qqy9fd25zm81lpd-source/flakes/playwright-nix",
+        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/playwright-nix",
         "type": "path"
       }
     },
