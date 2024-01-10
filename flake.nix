@@ -1,11 +1,12 @@
 {
 	inputs = {
-	  nixpkgs.url = "github:nixos/nixpkgs";
-	  flake-utils.url = "github:numtide/flake-utils";
-	  flake-parts.url = "github:hercules-ci/flake-parts";
+	  	nixpkgs.url = "github:nixos/nixpkgs";
+	  	flake-utils.url = "github:numtide/flake-utils";
+	  	flake-parts.url = "github:hercules-ci/flake-parts";
 	  
-	  myhello.url = "./flakes/hello-flake";
-		playwright-nix.url = "./flakes/playwright-nix";
+	  	myhello.url = "./flakes/hello-flake";
+	 	playwright-nix.url = "./flakes/playwright-nix";
+	  	python-app.url = "./python-app";
 	};
 
 	outputs = inputs@{ flake-parts, myhello, playwright-nix, ... }: 
@@ -16,6 +17,7 @@
 				packages.default = pkgs.hello;
 				packages.subflake-myhello = myhello.packages.${system}.hello;
 				packages.subflake-playwright-test = playwright-nix.packages.${system}.playwright-test;
+				packages.python-app = python-app.${system}.python-app
 			};
 		};
 }
