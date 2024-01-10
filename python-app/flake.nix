@@ -4,26 +4,25 @@
         flake-utils.url = "github:numtide/flake-utils";
     };
 
-    outputs = { self, nixpkgs, flake-utils }: {
+    outputs = { self, nixpkgs, flake-utils }:
 
-        flake-utils.eachDefaultSystem(sys: 
+        flake-utils.lib.eachDefaultSystem(system: 
             let 
-                pkgs = nixpkgs.${system};
+                pkgs = nixpkgs.legacyPackages.${system};
+                src = ./.;
             in {
 
                 devShell = pkgs.mkShell {
                     buildInputs = [ pkgs.python310 ];
-                }
+                };
 
-                packages.python-app = pkgs.writeShellApplication {
+                packages.app = pkgs.writeShellApplication {
                     name = "py-app";
                     runtimeInputs = [ pkgs.python310 ];
                     text = ''
-                        python test --project chromium
+                        python ${src}/app.py 
                     '';
                 };
             }
         );
-
-    };
 }

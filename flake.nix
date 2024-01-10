@@ -9,7 +9,7 @@
 	  	python-app.url = "./python-app";
 	};
 
-	outputs = inputs@{ flake-parts, myhello, playwright-nix, ... }: 
+	outputs = inputs@{ flake-parts, myhello, playwright-nix, python-app, ... }: 
 		flake-parts.lib.mkFlake { inherit inputs; } {
 			systems = [ "x86_64-linux" "aarch64-darwin" ];
 			imports = [ ./rust-build-package/module.nix ./flake-parts-modules/hello-module.nix ./flakes/playwright-nix/module.nix ];
@@ -17,7 +17,8 @@
 				packages.default = pkgs.hello;
 				packages.subflake-myhello = myhello.packages.${system}.hello;
 				packages.subflake-playwright-test = playwright-nix.packages.${system}.playwright-test;
-				packages.python-app = python-app.${system}.python-app
+				packages.python-app = python-app.packages.${system}.app;
+				devShells.python-app = python-app.devShell.${system};
 			};
 		};
 }
