@@ -98,11 +98,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-AOr/y/8QkwA2Lm8mPhxXRuPZhGEfja4h4o4XzK371fE=",
-        "path": "/nix/store/skl033a2pva96570r5yqgrrm9644173n-source/flakes/hello-flake",
+        "path": "/nix/store/rph1b10xbhzfsmlxh7j7w28nsxylxz2w-source/flakes/hello-flake",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/skl033a2pva96570r5yqgrrm9644173n-source/flakes/hello-flake",
+        "path": "/nix/store/rph1b10xbhzfsmlxh7j7w28nsxylxz2w-source/flakes/hello-flake",
         "type": "path"
       }
     },
@@ -147,11 +147,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1728232239,
-        "narHash": "sha256-09JnrxizfM3XnL3+x9fyMYMlhzg5aZIlplf3EefYspQ=",
+        "lastModified": 1728234727,
+        "narHash": "sha256-da4rWyMYs9hUHx6Wv48hJPRS/bXeCfD8tg5ham68wEY=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c4902d65047b446bb75b397d44b8c6e81ea6da1f",
+        "rev": "463f8b8ed434490a428648ed57f22cce56990860",
         "type": "github"
       },
       "original": {
@@ -178,11 +178,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1728232239,
-        "narHash": "sha256-09JnrxizfM3XnL3+x9fyMYMlhzg5aZIlplf3EefYspQ=",
+        "lastModified": 1728234727,
+        "narHash": "sha256-da4rWyMYs9hUHx6Wv48hJPRS/bXeCfD8tg5ham68wEY=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c4902d65047b446bb75b397d44b8c6e81ea6da1f",
+        "rev": "463f8b8ed434490a428648ed57f22cce56990860",
         "type": "github"
       },
       "original": {
@@ -200,11 +200,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-n+hH7abtJLAMmd0TeDlVW1wvQ0HOPNKXlRaSFt0215s=",
-        "path": "/nix/store/skl033a2pva96570r5yqgrrm9644173n-source/flakes/playwright-nix",
+        "path": "/nix/store/rph1b10xbhzfsmlxh7j7w28nsxylxz2w-source/flakes/playwright-nix",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/skl033a2pva96570r5yqgrrm9644173n-source/flakes/playwright-nix",
+        "path": "/nix/store/rph1b10xbhzfsmlxh7j7w28nsxylxz2w-source/flakes/playwright-nix",
         "type": "path"
       }
     },
@@ -216,11 +216,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-ZLkCak/EtIy7xvURU6w0dUruE1f6ntUvv803mLz6g7s=",
-        "path": "/nix/store/skl033a2pva96570r5yqgrrm9644173n-source/python-app",
+        "path": "/nix/store/rph1b10xbhzfsmlxh7j7w28nsxylxz2w-source/python-app",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/skl033a2pva96570r5yqgrrm9644173n-source/python-app",
+        "path": "/nix/store/rph1b10xbhzfsmlxh7j7w28nsxylxz2w-source/python-app",
         "type": "path"
       }
     },
