@@ -12,7 +12,7 @@
 	outputs = inputs@{ flake-parts, myhello, playwright-nix, python-app, ... }: 
 		flake-parts.lib.mkFlake { inherit inputs; } {
 			systems = [ "x86_64-linux" "aarch64-darwin" ];
-			imports = [ ./rust-build-package/module.nix ./flake-parts-modules/hello-module.nix ./flakes/playwright-nix/module.nix ];
+			imports = [ ./rust-build-package/module.nix ./flake-parts-modules/hello-module.nix ./flakes/playwright-nix/module.nix ./proxver.nix ];
 			perSystem = { pkgs, system, ... }: {
 				packages.default = pkgs.hello;
 				packages.subflake-myhello = myhello.packages.${system}.hello;
