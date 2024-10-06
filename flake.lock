@@ -98,59 +98,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-AOr/y/8QkwA2Lm8mPhxXRuPZhGEfja4h4o4XzK371fE=",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/hello-flake",
+        "path": "/nix/store/9rj2sk0n63syd3cd7lk4r4v3a57n59xv-source/flakes/hello-flake",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/hello-flake",
-=======
-        "path": "/nix/store/gpdm25hn7b0fswq0j850sia9v79xa2ir-source/flakes/hello-flake",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/gpdm25hn7b0fswq0j850sia9v79xa2ir-source/flakes/hello-flake",
->>>>>>> 2d9bc40 (lock update)
-=======
-        "path": "/nix/store/wnszh4gwmxcwi39fffj769jqwc9a77f1-source/flakes/hello-flake",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/wnszh4gwmxcwi39fffj769jqwc9a77f1-source/flakes/hello-flake",
->>>>>>> 5cf3b02 (add devshell)
-=======
-        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/hello-flake",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/hello-flake",
->>>>>>> 00195f5 (use localtunnel)
-=======
-        "path": "/nix/store/yaw9w6mv3v7q3fbc5dhp35c82h1vyc8c-source/flakes/hello-flake",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/yaw9w6mv3v7q3fbc5dhp35c82h1vyc8c-source/flakes/hello-flake",
->>>>>>> 4e9b948 (add port & subdomain as args)
-=======
-        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/hello-flake",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/hello-flake",
->>>>>>> 41f5cd6 (kill background jobs on kill signals)
-=======
-        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/hello-flake",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/hello-flake",
->>>>>>> 94ce6cb (assign any availbale not working)
+        "path": "/nix/store/9rj2sk0n63syd3cd7lk4r4v3a57n59xv-source/flakes/hello-flake",
         "type": "path"
       }
     },
@@ -248,17 +200,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-n+hH7abtJLAMmd0TeDlVW1wvQ0HOPNKXlRaSFt0215s=",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/playwright-nix",
+        "path": "/nix/store/9rj2sk0n63syd3cd7lk4r4v3a57n59xv-source/flakes/playwright-nix",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/flakes/playwright-nix",
+        "path": "/nix/store/9rj2sk0n63syd3cd7lk4r4v3a57n59xv-source/flakes/playwright-nix",
         "type": "path"
       }
     },
@@ -270,53 +216,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-ZLkCak/EtIy7xvURU6w0dUruE1f6ntUvv803mLz6g7s=",
-        "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/python-app",
+        "path": "/nix/store/9rj2sk0n63syd3cd7lk4r4v3a57n59xv-source/python-app",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/7sr5p53qinawxadzmn1z68rgjshqb77j-source/python-app",
-=======
-        "path": "/nix/store/gpdm25hn7b0fswq0j850sia9v79xa2ir-source/flakes/playwright-nix",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/gpdm25hn7b0fswq0j850sia9v79xa2ir-source/flakes/playwright-nix",
->>>>>>> 2d9bc40 (lock update)
-=======
-        "path": "/nix/store/wnszh4gwmxcwi39fffj769jqwc9a77f1-source/flakes/playwright-nix",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/wnszh4gwmxcwi39fffj769jqwc9a77f1-source/flakes/playwright-nix",
->>>>>>> 5cf3b02 (add devshell)
-=======
-        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/playwright-nix",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/bylgr9sl769gkyfil3490kpg53fwn621-source/flakes/playwright-nix",
->>>>>>> 00195f5 (use localtunnel)
-=======
-        "path": "/nix/store/yaw9w6mv3v7q3fbc5dhp35c82h1vyc8c-source/flakes/playwright-nix",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/yaw9w6mv3v7q3fbc5dhp35c82h1vyc8c-source/flakes/playwright-nix",
->>>>>>> 4e9b948 (add port & subdomain as args)
-=======
-        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/playwright-nix",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/w0fdnwgcplz3v720gp5vfykmna4wf4hb-source/flakes/playwright-nix",
->>>>>>> 41f5cd6 (kill background jobs on kill signals)
-=======
-        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/playwright-nix",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/0w93yy1xy3fng3qi9yas82qlgxx8h46g-source/flakes/playwright-nix",
->>>>>>> 94ce6cb (assign any availbale not working)
+        "path": "/nix/store/9rj2sk0n63syd3cd7lk4r4v3a57n59xv-source/python-app",
         "type": "path"
       }
     },
